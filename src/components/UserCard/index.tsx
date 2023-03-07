@@ -62,7 +62,7 @@ export function UserCard({ user, options }: UserCardProps) {
           if (option.popconfirm) {
             return (
               <Popconfirm key={option.key} {...option.popconfirm}>
-                <Button type='ghost' size='large' loading={option.isLoading}>
+                <Button id={`${option.key}-buttom`} type='ghost' size='large' loading={option.isLoading}>
                   {!option.isLoading && option.icon}
                 </Button>
               </Popconfirm>
@@ -74,6 +74,7 @@ export function UserCard({ user, options }: UserCardProps) {
               <Button
                 type='ghost'
                 size='large'
+                id={`${option.key}-buttom`}
                 loading={option.isLoading}
                 onClick={option.onClick}
               >

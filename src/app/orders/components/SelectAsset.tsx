@@ -55,6 +55,7 @@ export function SelectAsset() {
 
   return (
     <Select
+      id="select-asset"
       options={selectOptions}
       className={styles.select}
       value={selectValue}

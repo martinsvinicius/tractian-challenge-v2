@@ -55,6 +55,7 @@ export function SelectUnit() {
 
   return (
     <Select
+      id="select-unit"
       options={selectOptions}
       className={styles.select}
       value={selectValue}
